@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .RedFont{
+            color: red;
+            font-family:cursive ;
+        }
+        #grayDiv{
+            background-color: gray;
+        }
+        #greenDiv{
+            background-color: green;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <p class="RedFont"><b>CatPhotoApp</b></p>
+        <p class="RedFont">Click here to view more <a href="https://www.pexels.com/search/cat/">cat photos.</a>
+        </p>
+        <img  style="border-radius: 50%; border: 12px solid green;"  src="imgs/cat.jfif" alt="cat photo">
+
+        <div id="grayDiv">
+            <p><b>Things cats love:</b>
+            <ul>
+                <li>cat inp</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            </p>
+            <p><b>Top 3 things cats hate:</b>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            </p>
+
+        </div>
+        <!--container-->
+        <div>
+            <form>
+                <div id="greenDiv">
+                    <div>
+                        <input type="radio" id="indoor" name="door" value="Indoor" checked>
+                        <label for="indoor">Indoor</label>
+                        <input type="radio" id="outdoor" name="door" value="Outdoor">
+                        <label for="outdoor">Outdoor</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" id="loving" name="fav" value="loving" checked>
+                            <label for="loving">Loving</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lazy" name="fav" value="lazy">
+                            <label for="lazy">Lazy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="energitic" name="fav" value="Energitic">
+                            <label for="energitic">Energitic</label>
+
+                        </div>
+                        <div>
+                            <input type="url" id="catPhotoUrl" name="catPhotoUrl"placeholder="cat photo URL">
+                            <input type="submit" value="Submit">
+                        </div>
+                   
+                        
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

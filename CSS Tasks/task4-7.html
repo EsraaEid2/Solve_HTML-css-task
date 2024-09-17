@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .roundImg {
+            border-radius: 20px;
+            width: 300px;
+            height: 350px;
+           
+        }
+        .flexImgs{
+            display: flex;
+        }
+        .abs{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexImgs">
+        <img style="z-index: 1;top:30px;margin-left: 20px;" class="roundImg abs" src="imgs/1.jfif">
+        <img style="z-index: 2;margin-left: 40px; top: 40px;" class="roundImg abs" src="imgs/4.jfif">
+        <img style="z-index: 3; margin-left: 60px; top: 50px;" class="roundImg abs" src="imgs/3.jfif">
+        <img style="z-index: 4;top: 0; left: 0;"  class="abs"src="imgs/2.jfif">
+
+    </div>
+
+</body>
+
+</html>

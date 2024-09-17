@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .relative{
+            position: relative;
+            border: 3px solid black;
+            z-index: 1;
+        }
+        #absoluteAndZIndex{
+            background-color: blue;
+            width:800px;
+            position: absolute;
+            z-index: 3;
+            top:50px;
+            left:15px;
+        }
+        .absolute{
+            position: absolute;
+            background-color: green;
+            width: 200px;
+            z-index: 2;
+            top:2px;
+            right: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <main>
+            <div class="relative">
+                <p>Div1 position relative</p>
+            </div>
+            <div id="absoluteAndZIndex">
+                <p>Div2 position fixed and z-index </p>
+            </div>
+            <div class="absolute">
+                <p>Div3 position absolute</p>
+            </div>
+        </main>
+    </section>
+
+</body>
+
+</html>
