@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+    <style>
+      .container{
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+      }
+      .fitWidth{
+        width: 100%;
+      }
+    </style>
+    <title>login form</title>
+</head>
+
+<body>
+    <main>
+        <div class="container mx-auto mt-4">
+            <form method="#" action="#">
+                <h1>Please login</h1>
+                <div class="input-group input-group-lg  ">
+                    <input class="form-text fitWidth"type="email" id="email" name="email" placeholder="Email Address">
+                </div>
+                <div class=" input-group input-group-lg fitWidth ">
+                    <input class ="fitWidth" type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe">
+                    <label class="form-label" for ="rememberMe">Remember me</label>
+                </div>
+                <div class=" btn btn-primary  fitWidth">
+                    <button class="fitWidth" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
