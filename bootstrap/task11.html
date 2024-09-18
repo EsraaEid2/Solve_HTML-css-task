@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8f0c8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Media Query Demo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="gallery">
+            <div class="box">
+                <img src="https://placekitten.com/200/200" alt="Cat 1">
+                <p>Picture of a cat</p>
+            </div>
+            <div class="box">
+                <img src="https://placekitten.com/201/200" alt="Cat 2">
+                <p>Picture of another cat</p>
+            </div>
+            <div class="box">
+                <img src="https://placekitten.com/202/200" alt="Cat 3">
+                <p>Yet another cat</p>
+            </div>
+            <div class="box">
+                <img src="https://placekitten.com/203/200" alt="Cat 4">
+                <p>Still another cat</p>
+            </div>
+            <div class="box">
+                <img src="https://placekitten.com/204/200" alt="Cat 5">
+                <p>One more cat</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
