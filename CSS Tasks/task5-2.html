@@ -4,51 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
     <style>
-        #nav {
-            color: black;
+        .navbar {
             display: flex;
-            align-items: flex-end;
             justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
         }
 
-        li {
+        .navbar ul {
+            display: flex;
             list-style: none;
-            display: inline;
+
         }
 
-        li a {
-            margin-right: 25px;
-            font-weight: bold;
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #redCircle {
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
 
         }
     </style>
-    <title>Document</title>
 </head>
 
 <body>
     <main>
-        <header>
-            Navbars
-        </header>
-        <nav>
-            <div>
-                <div style="background-color: red; border-radius: 50%; width: 50px; height: 50px;"></div>
-                <div id="nav">
-                    <ul>
-                        <li>Contact</li>
-                        <li>Work</li>
-                        <li>Portfolio</li>
-                    </ul>
-                </div>
-            </div>
-
+        <hr>
+        <h1>Navbars</h1>
+        <hr>
+        <nav class="navbar">
+            <div id="redCircle"></div>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">portfolio</a></li>
+            </ul>
         </nav>
-
-
+        <hr>
     </main>
-    </div>
-
 </body>
 
 </html>
